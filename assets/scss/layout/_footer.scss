@@ -1,13 +1,19 @@
 .footer {
+  .container {
+    @include pad {
+      max-width: 724px;
+      padding: 0 14px;
+    }
+    @include mobile {
+      padding: 0 14px;
+    }
+  }
   background: #aa0601;
   color: #ffffff;
   padding-top: 48px;
   padding-bottom: 32px;
   a {
     color: #ffffff;
-  }
-  @include mobile {
-    padding: 0 24px;
   }
 }
 
