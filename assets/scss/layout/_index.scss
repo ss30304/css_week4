@@ -330,68 +330,6 @@ textarea {
   padding-top: 6px;
 }
 
-.footer {
-  background: #aa0601;
-  color: #ffffff;
-  padding-top: 48px;
-  padding-bottom: 32px;
-}
-
-.footer a {
-  color: #ffffff;
-}
-
-.top {
-  margin-bottom: 24px;
-}
-
-.footerNav ul li {
-  margin-right: 48px;
-  line-height: 24px;
-}
-
-.socialMedia img {
-  max-width: 48px;
-}
-
-.socialMedia ul li {
-  margin-left: 32px;
-}
-
-.mid {
-  border-bottom: 1px solid #ffffff;
-  margin-bottom: 32px;
-  padding-bottom: 32px;
-}
-
-.mid span {
-  margin-right: 16px;
-}
-
-.mid p {
-  font-size: 36px;
-  line-height: 54px;
-}
-
-.mid span {
-  text-align: center;
-  font-size: 36px;
-}
-
-.bottomRight li {
-  font-size: 14px;
-  line-height: 21px;
-  margin-left: 48px;
-}
-
-.bottomLeft {
-  font-weight: normal;
-}
-
-.rwdFooter {
-  display: none;
-}
-
 @media (max-width: 992px) {
   .productCards ul {
     flex-direction: column;
