@@ -8,6 +8,7 @@
   .container {
     @include pad {
       max-width: 696px;
+      flex-direction: row;
     }
   }
 }
