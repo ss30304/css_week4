@@ -5,7 +5,6 @@
     @include pad {
       max-width: 696px;
       flex-direction: row;
-      padding: 0 36px;
     }
     @include mobile {
       padding: 0;
