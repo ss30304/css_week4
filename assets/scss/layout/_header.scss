@@ -5,6 +5,11 @@
     flex-direction: column;
     align-items: start;
   }
+  .container {
+    @include pad {
+      max-width: 696px;
+    }
+  }
 }
 
 .nav {
@@ -19,5 +24,23 @@
         color: #ffffff;
       }
     }
+  }
+  @include mobile {
+    padding: 0;
+    width: 100%;
+    ul {
+      flex-wrap: wrap;
+      li {
+        border: 1px solid #ffffff;
+        width: 50%;
+        text-align: center;
+        margin: 0;
+        padding: 12px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  @include pad {
   }
 }
