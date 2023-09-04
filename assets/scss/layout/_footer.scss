@@ -56,6 +56,9 @@
     font-size: 36px;
     line-height: 54px;
   }
+  @include pad {
+    max-width: 696px;
+  }
   @include mobile {
     display: none;
   }
