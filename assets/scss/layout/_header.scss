@@ -28,7 +28,7 @@
   }
   @include mobile {
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     ul {
       flex-wrap: wrap;
       li {
