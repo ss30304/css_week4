@@ -1,10 +1,13 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
 .header {
   background-color: #aa0601;
 }
 
 .container {
   max-width: 1296px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -34,10 +37,6 @@
 
 .AIFE {
   align-items: flex-end;
-}
-
-.notoSans {
-  font-family: "Noto Sans TC", sans-serif;
 }
 
 .Roboto {
@@ -71,15 +70,19 @@
 
 .nav ul li {
   margin-right: 64px;
-  color: #ffffff;
   font-size: 20px;
   line-height: 30px;
+}
+
+.nav ul li a {
+  color: #ffffff;
 }
 
 .adPhoto {
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 787px;
   padding-top: 296px;
   padding-bottom: 296px;
   text-align: right;
@@ -88,6 +91,7 @@
 .adRight {
   width: 100%;
   color: #650300;
+  align-items: flex-end;
 }
 
 .adRight p {
@@ -111,7 +115,6 @@
   background-color: #aa0601;
   width: 104px;
   padding: 6px 12px;
-  box-sizing: border-box;
 }
 
 .intro {
@@ -131,11 +134,10 @@
 }
 
 .cards ul {
-  width: 100%;
 }
 
 .cards li {
-  width: 306px;
+  width: ((100% - 72px)/4);
 }
 
 .cards span {
@@ -171,11 +173,17 @@
 
 .productCards {
   color: #aa0601;
+  font-style: italic;
   width: 100%;
 }
 
+.productCards li {
+  width: calc((100% - 48px) / 3);
+  text-align: center;
+}
+
 .productCards img {
-  width: 416px;
+  width: 100%;
   margin-bottom: 8px;
 }
 
@@ -195,15 +203,12 @@
 }
 
 .crossoverCards {
-  width: 100%;
 }
 
 .crossoverCards ul {
-  width: 100%;
 }
 
 .crossoverCards li {
-  width: 50%;
 }
 
 .crossoverCards ul li img {
@@ -216,6 +221,7 @@
 
 .crossoverCards h3 {
   background-color: #ffffff;
+  font-style: italic;
 }
 
 .feedback h2 {
@@ -226,12 +232,8 @@
   margin-bottom: 48px;
 }
 
-.fbCards {
-  width: 100%;
-}
-
 .fbCards li {
-  max-width: 306px;
+  width: calc((100% - 72px) / 4);
 }
 
 .fbCards img {
@@ -279,7 +281,6 @@
 
 .form {
   max-width: 636px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -359,7 +360,7 @@ textarea {
 }
 
 .socialMedia img {
-  width: 48px;
+  max-width: 48px;
 }
 
 .socialMedia ul li {
@@ -400,6 +401,137 @@ textarea {
   display: none;
 }
 
+@media (max-width: 992px) {
+  .productCards ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .rwdH2 h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+  .header .container {
+    flex-direction: column;
+    align-items: start;
+    /* justify-content: flex-start; */
+  }
+  .logo {
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .nav {
+    padding: 0;
+  }
+  .nav ul {
+    flex-wrap: wrap;
+  }
+  .nav ul li {
+    border: 1px solid #ffffff;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .intro {
+    padding: 40px 14px;
+  }
+  .intro ul {
+    flex-direction: column;
+  }
+  .intro ul li {
+    width: 100%;
+  }
+  .prodjectList {
+    padding: 40px 14px;
+  }
+  .productCards ul {
+    flex-direction: column;
+  }
+  .productCards li {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .productCards li img {
+    max-width: 348px;
+  }
+  .feedback {
+    padding: 40px 14px;
+  }
+  .fbCards ul {
+    flex-direction: column;
+  }
+  .fbCards ul li {
+    width: calc(100% - 28px);
+    margin-bottom: 16px;
+  }
+  .footer {
+    padding: 0 24px;
+  }
+  .rwdFooter {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    max-width: 348px;
+  }
+  .rwdFooter ul li {
+    align-items: center;
+  }
+  .rwdFooter ul li img {
+    width: 24px;
+    margin-left: 8px;
+  }
+  .rwdFooter ul li p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .tel span {
+    width: 18px;
+    height: 18px;
+    margin-right: 11px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  .email span {
+    margin-bottom: 0px;
+    width: 20px;
+    height: 16px;
+    margin-right: 11px;
+  }
+  .bottom {
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .bottomRight {
+  }
+  .bottomRight ul {
+    flex-direction: column;
+  }
+  .bottomRight ul li {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+  .bottomLeft {
+    margin-bottom: 8px;
+  }
+  .bottomLeft p {
+    line-height: 24px;
+    font-size: 16px;
+  }
+  .top,
+  .mid {
+    display: none;
+  }
+}
+
 /*手機*/
 
 @media (max-width: 375px) {
@@ -414,12 +546,9 @@ textarea {
     /* justify-content: flex-start; */
   }
   .logo {
-    width: 100%;
     padding: 16px;
-    box-sizing: border-box;
   }
   .nav {
-    width: 100%;
     padding: 0;
   }
   .nav ul {
@@ -428,7 +557,6 @@ textarea {
   .nav ul li {
     border: 1px solid #ffffff;
     width: 50%;
-    box-sizing: border-box;
     text-align: center;
     margin: 0;
     padding: 12px;
@@ -475,7 +603,6 @@ textarea {
     flex-direction: column;
   }
   .crossoverCards ul li {
-    width: 100%;
     margin-bottom: 24px;
   }
   .pcImg {
@@ -492,7 +619,7 @@ textarea {
     flex-direction: column;
   }
   .fbCards ul li {
-    max-width: 348px;
+    width: calc(100% - 28px);
     margin-bottom: 16px;
   }
   .contact {
@@ -509,7 +636,6 @@ textarea {
   .customerForm input,
   .customerForm textarea {
     max-width: 348px;
-    width: 100%;
   }
   .checkPart {
     margin-bottom: 24px;
@@ -520,7 +646,6 @@ textarea {
   }
   .customerForm button {
     max-width: 348px;
-    width: 100%;
     padding: 16px;
   }
   .footer {
