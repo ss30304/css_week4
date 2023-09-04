@@ -1,14 +1,13 @@
 @import "../layout/mixin";
 .header {
   background-color: #aa0601;
-  @include mobile {
-    flex-direction: column;
-    align-items: start;
-  }
   .container {
     @include pad {
       max-width: 696px;
-      flex-direction: row;
+    }
+    @include mobile {
+      flex-direction: column;
+      align-items: start;
     }
   }
 }
