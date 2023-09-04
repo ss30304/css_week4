@@ -1,8 +1,7 @@
 .footer {
   .container {
     @include pad {
-      max-width: 724px;
-      padding: 0 14px;
+      max-width: 696px;
     }
     @include mobile {
       padding: 0 14px;
