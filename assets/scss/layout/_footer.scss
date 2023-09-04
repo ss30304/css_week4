@@ -39,6 +39,9 @@
   }
   ul li {
     margin-left: 32px;
+    @include pad {
+      margin-left: 16px;
+    }
   }
 }
 
