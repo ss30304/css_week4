@@ -1,3 +1,4 @@
+@import "../layout/mixin";
 body {
   font-family: "Noto Sans TC", sans-serif;
 }
@@ -9,6 +10,14 @@ body {
 .container {
   max-width: 1296px;
   margin: 0 auto;
+  @include pad {
+    flex-direction: column;
+    align-items: start;
+  }
+  @include mobile {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 
 .PT80 {
@@ -120,13 +129,9 @@ body {
 .intro {
   background-color: #fbf2f2;
   color: #650300;
-}
-
-.intro h2 {
-  font-size: 48px;
-  line-height: 72px;
-  font-weight: bold;
-  margin-bottom: 24px;
+  @include h2 {
+    margin-bottom: 24px;
+  }
 }
 
 .cards {

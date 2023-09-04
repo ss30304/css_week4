@@ -1,0 +1,18 @@
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin h2 {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: bold;
+  @content;
+}
