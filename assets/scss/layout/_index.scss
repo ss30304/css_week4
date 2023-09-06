@@ -3,10 +3,6 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-/*.header {
-  background-color: #aa0601;
-}*/
-
 .container {
   max-width: 1296px;
   margin: 0 auto;
@@ -70,6 +66,7 @@ body {
   background-color: #fbf2f2;
   color: #650300;
   @include h2 {
+    /*沒有反應*/
     margin-bottom: 24px;
   }
   @include mobile {
@@ -105,15 +102,13 @@ body {
     font-size: 16px;
     line-height: 24px;
     text-align: left;
+    font-weight: normal;
   }
 }
 
 .prodjectList {
   color: #650300;
-  font-size: 48px;
-  line-height: 72px;
-  font-weight: bold;
-  h2 {
+  @include h2 {
     margin-bottom: 48px;
   }
   @include mobile {
