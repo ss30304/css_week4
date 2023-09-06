@@ -109,6 +109,7 @@ body {
 .prodjectList {
   color: #650300;
   @include h2 {
+    /*沒反應*/
     margin-bottom: 48px;
   }
   @include mobile {
@@ -160,8 +161,9 @@ body {
 
 .crossoverCards {
   h3 {
-    background-color: #aa0601;
+    background-color: #ffffff;
     font-style: italic;
+    color: #aa0601;
   }
   ul {
     @include mobile {
