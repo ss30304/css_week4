@@ -16,3 +16,11 @@
   font-weight: bold;
   @content;
 }
+
+@mixin h3 {
+  font-size: 48px;
+  line-height: 72px;
+  color: #aa0601;
+  font-style: italic;
+  font-weight: 900;
+}
