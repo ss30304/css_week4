@@ -111,7 +111,7 @@ body {
 .intro {
   background-color: #fbf2f2;
   color: #650300;
-  @include h2 {
+  h2 {
     margin-bottom: 24px;
   }
 }
