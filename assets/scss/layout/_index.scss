@@ -65,7 +65,8 @@ body {
 .intro {
   background-color: #fbf2f2;
   color: #650300;
-  @include h2 {
+  h2 {
+    @include h2;
     /*沒有反應*/
     margin-bottom: 24px;
   }
@@ -118,6 +119,7 @@ body {
 }
 
 .productCards {
+  /*p沒吃到設定為什麼字體大小還是跟h2依樣*/
   color: #aa0601;
   font-style: italic;
   width: 100%;
