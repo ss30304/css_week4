@@ -2,6 +2,7 @@
 .header {
   background-color: #aa0601;
   .container {
+    padding: auto 16.25%;
     @include pad {
       max-width: 696px;
       flex-direction: row;
@@ -29,7 +30,7 @@
   }
   @include mobile {
     padding: 0;
-    max-width: 100%;
+    width: 100%;
     ul {
       flex-wrap: wrap;
       li {

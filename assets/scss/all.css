@@ -540,6 +540,9 @@ textarea {
 .header {
   background-color: #aa0601;
 }
+.header .container {
+  padding: auto 16.25%;
+}
 @media (max-width: 768px) {
   .header .container {
     max-width: 696px;
@@ -569,7 +572,7 @@ textarea {
 @media (max-width: 375px) {
   .nav {
     padding: 0;
-    max-width: 100%;
+    width: 100%;
   }
   .nav ul {
     flex-wrap: wrap;
