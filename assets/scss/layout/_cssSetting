@@ -1,0 +1,47 @@
+.PT80 {
+    padding-top: 80px;
+}
+
+.PB80 {
+    padding-bottom: 80px;
+}
+
+.DF {
+    display: flex;
+}
+
+.FDC {
+    flex-direction: column;
+}
+
+.JCSB {
+    justify-content: space-between;
+}
+
+.JCFE {
+    justify-content: flex-end;
+}
+
+.AIFE {
+    align-items: flex-end;
+}
+
+.Roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.AIC {
+    align-items: center;
+}
+
+.TAR {
+    text-align: right;
+}
+
+.TAC {
+    text-align: center;
+}
+
+.TAL {
+    text-align-last: left;
+}
