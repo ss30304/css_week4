@@ -109,8 +109,9 @@ body {
 
 .prodjectList {
   color: #650300;
-  @include h2 {
+  h2 {
     /*沒反應*/
+    @include h2;
     margin-bottom: 48px;
   }
   @include mobile {
@@ -150,7 +151,8 @@ body {
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
-  @include h2 {
+  h2 {
+    @include h2;
     color: #ffffff;
     margin-bottom: 48px;
   }
@@ -187,7 +189,8 @@ body {
 }
 
 .feedback {
-  @include h2 {
+  h2 {
+    @include h2;
     color: #650300;
     margin-bottom: 48px;
   }
