@@ -77,35 +77,41 @@ body {
   padding-top: 296px;
   padding-bottom: 296px;
   text-align: right;
+  @include mobile {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+    background-size: cover;
+    padding: 144px 14px;
+  }
 }
 
 .adRight {
   width: 100%;
   color: #650300;
   align-items: flex-end;
-}
-
-.adRight p {
-  font-size: 36px;
-  line-height: 54px;
-  font-weight: normal;
-}
-
-.adRight h2 {
-  font-size: 64px;
-  line-height: 96px;
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-.adRight a {
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  background-color: #aa0601;
-  width: 104px;
-  padding: 6px 12px;
+  p {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: normal;
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  h2 {
+    font-size: 64px;
+    line-height: 96px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  a {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #aa0601;
+    width: 104px;
+    padding: 6px 12px;
+  }
 }
 
 .intro {
@@ -113,6 +119,15 @@ body {
   color: #650300;
   @include h2 {
     margin-bottom: 24px;
+  }
+  @include mobile {
+    padding: 40px 14px;
+    ul {
+      flex-direction: column;
+      li {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -146,70 +161,106 @@ body {
   font-size: 48px;
   line-height: 72px;
   font-weight: bold;
-}
-
-.prodjectList h2 {
-  margin-bottom: 48px;
+  h2 {
+    margin-bottom: 48px;
+  }
+  @include mobile {
+    padding: 40px 14px;
+  }
 }
 
 .productCards {
   color: #aa0601;
   font-style: italic;
   width: 100%;
-}
-
-.productCards li {
-  width: calc((100% - 48px) / 3);
-  text-align: center;
-}
-
-.productCards img {
-  width: 100%;
-  margin-bottom: 8px;
+  li {
+    width: calc((100% - 48px) / 3);
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  @include mobile {
+    ul {
+      flex-direction: column;
+    }
+    li {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    img {
+      max-width: 348px;
+    }
+  }
 }
 
 .crossover {
-  font-size: 48px;
-  line-height: 72px;
-  font-weight: bold;
   color: #aa0601;
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
+  @include h2 {
+    color: #ffffff;
+    margin-bottom: 48px;
+  }
+  @include mobile {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+    background-size: cover;
+    padding: 40px 14px;
+  }
 }
 
-.crossover h2 {
-  color: #ffffff;
-  margin-bottom: 48px;
-}
-
-.crossoverCards ul li img {
-  width: 100%;
+.crossoverCards {
+  h3 {
+    background-color: #ffffff;
+    font-style: italic;
+  }
+  ul {
+    @include mobile {
+      flex-direction: column;
+    }
+    li {
+      @include mobile {
+        margin-bottom: 24px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .rwdImg {
   display: none;
 }
 
-.crossoverCards h3 {
-  background-color: #ffffff;
-  font-style: italic;
+.feedback {
+  @include h2 {
+    color: #650300;
+    margin-bottom: 48px;
+  }
+  @include mobile {
+    padding: 40px 14px;
+  }
 }
 
-.feedback h2 {
-  color: #650300;
-  font-size: 48px;
-  line-height: 72px;
-  font-weight: bold;
-  margin-bottom: 48px;
-}
-
-.fbCards li {
-  width: calc((100% - 72px) / 4);
-}
-
-.fbCards img {
-  width: 100%;
+.fbCards {
+  ul {
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  li {
+    width: calc((100% - 72px) / 4);
+    @include mobile {
+      width: calc(100% - 28px);
+      margin-bottom: 16px;
+    }
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .name {
@@ -221,10 +272,9 @@ body {
   box-shadow: 0px 2px 6px #00000029;
   padding: 16px;
   line-height: 24px;
-}
-
-.customer p:nth-child(2) {
-  margin-bottom: 72px;
+  p:nth-child(2) {
+    margin-bottom: 72px;
+  }
 }
 
 .date {
@@ -235,55 +285,87 @@ body {
 
 .contact {
   background: #fbf2f2;
-}
-
-.contact h2 {
-  font-size: 48px;
-  line-height: 72px;
-  font-weight: bold;
-  color: #650300;
-  margin-bottom: 48px;
-}
-
-.form p {
-  margin-bottom: 24px;
-  font-size: 20px;
-  line-height: 30px;
+  @include h2 {
+    color: #650300;
+    margin-bottom: 48px;
+  }
+  p {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 30px;
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  @include mobile {
+    padding: 40px 14px;
+  }
 }
 
 .form {
   max-width: 636px;
   margin: 0 auto;
+  p {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.customerForm input {
-  /*為什麼寬度不能設100%*/
-  max-width: 636px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 12px;
-  color: rgba(0, 0, 0, 0.2);
-  margin-bottom: 16px;
-  box-sizing: border-box;
-}
-
-.customerForm p {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.customerForm input:nth-child(8) {
-  height: 136px;
+.customerForm {
+  @include mobile {
+    max-width: 348px;
+  }
+  input {
+    /*為什麼寬度不能設100%*/
+    max-width: 636px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    @include mobile {
+      max-width: 348px;
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  input:nth-child(8) {
+    height: 136px;
+  }
+  button {
+    margin: 0 auto;
+    background: #aa0601;
+    color: #ffffff;
+    line-height: 24px;
+    padding: 16px 176px;
+    border: 0;
+    @include mobile {
+      max-width: 348px;
+      padding: 16px;
+    }
+  }
 }
 
 .checkPart {
   margin-bottom: 48px;
-}
-
-.checkPart input {
-  width: 24px;
-  height: 24px;
-  margin: 0 4px 0 0;
+  input {
+    width: 24px;
+    height: 24px;
+    margin: 0 4px 0 0;
+    @include mobile {
+      max-width: 24px;
+    }
+  }
+  @include mobile {
+    margin-bottom: 24px;
+    align-items: start;
+  }
 }
 
 .checkP {
@@ -292,124 +374,19 @@ body {
   line-height: 24px;
 }
 
-.customerForm p {
-  margin-bottom: 8px;
-}
-
-.customerForm button {
-  margin: 0 auto;
-  background: #aa0601;
-  color: #ffffff;
-  line-height: 24px;
-  padding: 16px 176px;
-  border: 0;
-}
-
 textarea {
   margin-bottom: 16px;
   padding-left: 12px;
   padding-top: 6px;
-}
-
-@media (max-width: 992px) {
-  .productCards ul {
-    flex-direction: column;
-    align-items: center;
+  @include mobile {
+    max-width: 348px;
   }
 }
 
-@media (max-width: 580px) {
+@include mobile {
   .rwdH2 h2 {
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 24px;
-  }
-  .logo {
-    padding: 16px;
-    box-sizing: border-box;
-  }
-  .intro {
-    padding: 40px 14px;
-  }
-  .intro ul {
-    flex-direction: column;
-  }
-  .intro ul li {
-    width: 100%;
-  }
-  .prodjectList {
-    padding: 40px 14px;
-  }
-  .productCards ul {
-    flex-direction: column;
-  }
-  .productCards li {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-  .productCards li img {
-    max-width: 348px;
-  }
-  .feedback {
-    padding: 40px 14px;
-  }
-  .fbCards ul {
-    flex-direction: column;
-  }
-  .fbCards ul li {
-    width: calc(100% - 28px);
-    margin-bottom: 16px;
-  }
-}
-
-/*手機*/
-
-@media (max-width: 375px) {
-  .rwdH2 h2 {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 24px;
-  }
-  .adPhoto {
-    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
-    background-size: cover;
-    padding: 144px 14px;
-  }
-  .adRight p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .intro {
-    padding: 40px 14px;
-  }
-  .intro ul {
-    flex-direction: column;
-  }
-  .intro ul li {
-    width: 100%;
-  }
-  .prodjectList {
-    padding: 40px 14px;
-  }
-  .productCards ul {
-    flex-direction: column;
-  }
-  .productCards li {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-  .productCards li img {
-    max-width: 348px;
-  }
-  .crossover {
-    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
-    background-size: cover;
-    padding: 40px 14px;
-  }
-  .crossoverCards ul {
-    flex-direction: column;
-  }
-  .crossoverCards ul li {
     margin-bottom: 24px;
   }
   .pcImg {
@@ -418,41 +395,5 @@ textarea {
   .rwdImg {
     display: block;
     max-width: 348px;
-  }
-  .feedback {
-    padding: 40px 14px;
-  }
-  .fbCards ul {
-    flex-direction: column;
-  }
-  .fbCards ul li {
-    width: calc(100% - 28px);
-    margin-bottom: 16px;
-  }
-  .contact {
-    padding: 40px 14px;
-  }
-  .contact p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .customerForm textarea {
-    box-sizing: border-box;
-  }
-  .customerForm,
-  .customerForm input,
-  .customerForm textarea {
-    max-width: 348px;
-  }
-  .checkPart {
-    margin-bottom: 24px;
-    align-items: start;
-  }
-  .checkPart input {
-    max-width: 24px;
-  }
-  .customerForm button {
-    max-width: 348px;
-    padding: 16px;
   }
 }
