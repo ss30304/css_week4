@@ -7,7 +7,6 @@ body {
   max-width: 1296px;
   margin: 0 auto;
   @include pad {
-    max-width: 696px;
     flex-direction: column;
     align-items: start;
   }
@@ -24,6 +23,8 @@ body {
   height: 787px;
   padding-top: 296px;
   padding-bottom: 296px;
+  padding-left: 12px;
+  padding-right: 12px;
   text-align: right;
   @include mobile {
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
@@ -65,8 +66,7 @@ body {
 }
 
 .intro {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  @include padding;
   background-color: #fbf2f2;
   color: #650300;
   h2 {
@@ -123,8 +123,7 @@ body {
 }
 
 .prodjectList {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  @include padding;
   color: #650300;
   h2 {
     @include h2;
@@ -181,8 +180,7 @@ body {
 }
 
 .crossover {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  @include padding;
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
@@ -234,8 +232,7 @@ body {
 }
 
 .feedback {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  @include padding;
   h2 {
     @include h2;
     color: #650300;
@@ -314,8 +311,7 @@ body {
 }
 
 .contact {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  @include padding;
   background: #fbf2f2;
   @include h2 {
   }

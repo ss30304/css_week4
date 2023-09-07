@@ -1,3 +1,7 @@
+@mixin padding {
+  padding: 80px 12px;
+}
+
 @mixin mobile {
   @media (max-width: 375px) {
     @content;
