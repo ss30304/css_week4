@@ -64,6 +64,7 @@ body {
     justify-content: space-between;
     li {
       width: calc((100% - 72px) / 4);
+      margin-bottom: 80px;
       img {
         margin-bottom: 0;
       }
@@ -81,6 +82,7 @@ body {
         height: 24px;
         background-color: #5f3e2d;
         border-radius: 4px;
+        margin-right: 8px;
       }
       .color2 {
         width: 24px;
@@ -88,6 +90,14 @@ body {
         background-color: #b75929;
         border-radius: 4px;
       }
+    }
+  }
+}
+
+.pages {
+  ul {
+    li {
+      border-left: 1px solid #555555;
     }
   }
 }
