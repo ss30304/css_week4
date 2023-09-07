@@ -1127,7 +1127,7 @@ body {
   margin-bottom: 80px;
 }
 .pages ul {
-  align-items: center;
+  width: 372px;
 }
 .pages ul li {
   border-left: 1px solid #555555;
