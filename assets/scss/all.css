@@ -410,6 +410,8 @@ body {
 
 .contact {
   background: #fbf2f2;
+}
+.contact h2 {
   font-size: 48px;
   line-height: 72px;
   font-weight: bold;
@@ -615,12 +617,11 @@ textarea {
 .footer a {
   color: #ffffff;
 }
-
-.top {
+.footer .top {
   margin-bottom: 24px;
 }
 @media (max-width: 375px) {
-  .top {
+  .footer .top {
     display: none;
   }
 }
@@ -663,7 +664,7 @@ textarea {
 }
 @media (max-width: 768px) {
   .mid {
-    max-width: 696px;
+    width: 100%;
   }
 }
 @media (max-width: 375px) {
@@ -746,6 +747,11 @@ textarea {
   }
 }
 
+@media (max-width: 768px) {
+  .bottom {
+    width: 100%;
+  }
+}
 @media (max-width: 375px) {
   .bottom {
     flex-direction: column;
