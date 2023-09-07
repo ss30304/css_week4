@@ -1101,4 +1101,6 @@ body {
 }
 .productCards ul li .productName {
   justify-content: space-between;
+  font-weight: 500;
+  color: #aa0601;
 }/*# sourceMappingURL=all.css.map */
