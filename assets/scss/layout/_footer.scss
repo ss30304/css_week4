@@ -1,15 +1,23 @@
 @import "../layout/mixin";
 .footer {
+  @include padToMobile {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
   @include mobile {
     padding-top: 0px;
     padding-bottom: 0;
   }
   .container {
+    @include padToMobile {
+      width: calc(100% - 72px);
+      align-items: center;
+    }
     @include pad {
       max-width: 696px;
     }
     @include mobile {
-      max-width: 348px;
+      width: calc(100% - 28px);
     }
   }
   background: #aa0601;
@@ -20,6 +28,7 @@
     color: #ffffff;
   }
   .top {
+    width: 100%;
     margin-bottom: 24px;
     @include padToMobile {
       display: none;
@@ -33,6 +42,9 @@
 .footerNav ul li {
   margin-right: 48px;
   line-height: 24px;
+  @include pad {
+    margin-right: 24px;
+  }
 }
 
 .socialMedia {
@@ -80,6 +92,15 @@
     line-height: 21px;
     margin-left: 48px;
   }
+  @include padToMobile {
+    ul {
+      flex-direction: column;
+      li {
+        margin-left: 0;
+        margin-bottom: 8px;
+      }
+    }
+  }
   @include mobile {
     width: 100%;
     ul {
@@ -106,11 +127,11 @@
 .rwdFooter {
   display: none;
   @include padToMobile {
+    width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
     border-bottom: 1px solid #ffffff;
-    max-width: 348px;
     ul {
       li {
         align-items: center;
@@ -178,6 +199,7 @@
     flex-direction: column;
     padding-top: 16px;
     padding-bottom: 16px;
+    align-items: flex-start;
   }
   @include mobile {
     flex-direction: column;

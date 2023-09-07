@@ -316,6 +316,14 @@ body {
   width: 100%;
   margin-bottom: 8px;
 }
+@media (max-width: 1200px) {
+  .productCards ul {
+    flex-direction: column;
+  }
+  .productCards li {
+    width: 336px;
+  }
+}
 @media (max-width: 768px) {
   .productCards ul {
     flex-direction: column;
@@ -418,6 +426,11 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  .fbCards ul {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 768px) {
   .fbCards ul {
     flex-wrap: wrap;
@@ -430,6 +443,12 @@ body {
 }
 .fbCards li {
   width: calc((100% - 72px) / 4);
+}
+@media (max-width: 1200px) {
+  .fbCards li {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 24px;
+  }
 }
 @media (max-width: 768px) {
   .fbCards li {
@@ -743,10 +762,22 @@ textarea {
   padding-top: 48px;
   padding-bottom: 32px;
 }
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+}
 @media (max-width: 375px) {
   .footer {
     padding-top: 0px;
     padding-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .footer .container {
+    width: calc(100% - 72px);
+    align-items: center;
   }
 }
 @media (max-width: 768px) {
@@ -756,13 +787,14 @@ textarea {
 }
 @media (max-width: 375px) {
   .footer .container {
-    max-width: 348px;
+    width: calc(100% - 28px);
   }
 }
 .footer a {
   color: #ffffff;
 }
 .footer .top {
+  width: 100%;
   margin-bottom: 24px;
 }
 @media (max-width: 600px) {
@@ -779,6 +811,11 @@ textarea {
 .footerNav ul li {
   margin-right: 48px;
   line-height: 24px;
+}
+@media (max-width: 768px) {
+  .footerNav ul li {
+    margin-right: 24px;
+  }
 }
 
 .socialMedia img {
@@ -833,6 +870,15 @@ textarea {
   line-height: 21px;
   margin-left: 48px;
 }
+@media (max-width: 600px) {
+  .bottomRight ul {
+    flex-direction: column;
+  }
+  .bottomRight ul li {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+}
 @media (max-width: 375px) {
   .bottomRight {
     width: 100%;
@@ -864,11 +910,11 @@ textarea {
 }
 @media (max-width: 600px) {
   .rwdFooter {
+    width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
     border-bottom: 1px solid #ffffff;
-    max-width: 348px;
   }
   .rwdFooter ul li {
     align-items: center;
@@ -932,6 +978,7 @@ textarea {
     flex-direction: column;
     padding-top: 16px;
     padding-bottom: 16px;
+    align-items: flex-start;
   }
 }
 @media (max-width: 375px) {

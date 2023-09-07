@@ -147,6 +147,14 @@ body {
     width: 100%;
     margin-bottom: 8px;
   }
+  @include padToPc {
+    ul {
+      flex-direction: column;
+    }
+    li {
+      width: 336px;
+    }
+  }
   @include pad {
     ul {
       flex-direction: column;
@@ -240,6 +248,9 @@ body {
 
 .fbCards {
   ul {
+    @include padToPc {
+      flex-wrap: wrap;
+    }
     @include pad {
       flex-wrap: wrap;
     }
@@ -249,6 +260,10 @@ body {
   }
   li {
     width: calc((100% - 72px) / 4);
+    @include padToPc {
+      width: calc((100% - 24px) / 2);
+      margin-bottom: 24px;
+    }
     @include pad {
       width: calc((100% - 24px) / 2);
       margin-bottom: 24px;

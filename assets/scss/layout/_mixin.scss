@@ -4,6 +4,12 @@
   }
 }
 
+@mixin padToPc {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin pad {
   @media (max-width: 768px) {
     @content;
