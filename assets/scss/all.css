@@ -1033,4 +1033,33 @@ textarea {
 .TAL {
   -moz-text-align-last: left;
        text-align-last: left;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.productPage {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.productPage ul {
+  justify-content: space-around;
+}
+.productPage ul li {
+  width: 432px;
+  padding: 24px 150px;
+  border-left: 1px solid #dcdcdc;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+}
+.productPage ul li a {
+  color: #000000;
+}
+.productPage ul li:hover {
+  border-bottom: 8px solid #aa0601;
+}
+.productPage ul li:nth-child(3) {
+  border-right: 1px solid #dcdcdc;
 }/*# sourceMappingURL=all.css.map */
