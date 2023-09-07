@@ -1,47 +1,39 @@
-.PT80 {
-    padding-top: 80px;
-}
-
-.PB80 {
-    padding-bottom: 80px;
-}
-
 .DF {
-    display: flex;
+  display: flex;
 }
 
 .FDC {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .JCSB {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .JCFE {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .AIFE {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .Roboto {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .AIC {
-    align-items: center;
+  align-items: center;
 }
 
 .TAR {
-    text-align: right;
+  text-align: right;
 }
 
 .TAC {
-    text-align: center;
+  text-align: center;
 }
 
 .TAL {
-    text-align-last: left;
+  text-align-last: left;
 }

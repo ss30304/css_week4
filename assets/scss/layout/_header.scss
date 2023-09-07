@@ -7,6 +7,11 @@
       max-width: 696px;
       flex-direction: row;
     }
+    @include padToMobile {
+      padding: 0;
+      flex-direction: column;
+      align-items: start;
+    }
     @include mobile {
       padding: 0;
       flex-direction: column;
@@ -25,6 +30,22 @@
       line-height: 30px;
       a {
         color: #ffffff;
+      }
+    }
+  }
+  @include padToMobile {
+    padding: 0;
+    width: 100%;
+    ul {
+      flex-wrap: wrap;
+      li {
+        border: 1px solid #ffffff;
+        width: 50%;
+        text-align: center;
+        margin: 0;
+        padding: 12px;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }

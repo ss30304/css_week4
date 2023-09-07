@@ -1,11 +1,15 @@
 @import "../layout/mixin";
 .footer {
+  @include mobile {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
   .container {
     @include pad {
       max-width: 696px;
     }
     @include mobile {
-      max-width: 347px;
+      max-width: 348px;
     }
   }
   background: #aa0601;
@@ -17,6 +21,9 @@
   }
   .top {
     margin-bottom: 24px;
+    @include padToMobile {
+      display: none;
+    }
     @include mobile {
       display: none;
     }
@@ -59,6 +66,9 @@
   @include pad {
     width: 100%;
   }
+  @include padToMobile {
+    display: none;
+  }
   @include mobile {
     display: none;
   }
@@ -95,6 +105,26 @@
 
 .rwdFooter {
   display: none;
+  @include padToMobile {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    max-width: 348px;
+    ul {
+      li {
+        align-items: center;
+        img {
+          width: 24px;
+          margin-left: 8px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
   @include mobile {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -144,8 +174,14 @@
   @include pad {
     width: 100%;
   }
+  @include padToMobile {
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   @include mobile {
     flex-direction: column;
+    align-items: flex-start;
     padding-top: 16px;
     padding-bottom: 16px;
   }

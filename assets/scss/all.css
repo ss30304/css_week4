@@ -246,6 +246,10 @@ body {
   }
   .intro ul li {
     width: 100%;
+    margin-bottom: 24px;
+  }
+  .intro ul li:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 
@@ -281,6 +285,8 @@ body {
 }
 
 .prodjectList {
+  padding-top: 80px;
+  padding-bottom: 80px;
   color: #650300;
 }
 .prodjectList h2 {
@@ -326,12 +332,17 @@ body {
     width: 100%;
     margin-bottom: 24px;
   }
+  .productCards li:nth-child(3) {
+    margin-bottom: 0;
+  }
   .productCards img {
     max-width: 348px;
   }
 }
 
 .crossover {
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,11 +391,20 @@ body {
 .crossoverCards ul li img {
   width: 100%;
 }
+@media (max-width: 375px) {
+  .crossoverCards ul li:nth-child(2) {
+    margin-bottom: 0;
+  }
+}
 
 .rwdImg {
   display: none;
 }
 
+.feedback {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .feedback h2 {
   font-size: 48px;
   line-height: 72px;
@@ -419,13 +439,18 @@ body {
 }
 @media (max-width: 375px) {
   .fbCards li {
-    width: calc(100% - 28px);
+    width: 100%;
     margin-bottom: 16px;
   }
 }
 @media (max-width: 768px) {
   .fbCards li:nth-child(1) .customer p:nth-child(2) {
     margin-bottom: 96px;
+  }
+}
+@media (max-width: 375px) {
+  .fbCards li:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 .fbCards img {
@@ -454,6 +479,8 @@ body {
 }
 
 .contact {
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: #fbf2f2;
   font-size: 48px;
   line-height: 72px;
@@ -481,6 +508,16 @@ body {
     width: 576px;
   }
 }
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .form {
+    width: 100%;
+  }
+}
 .form p {
   margin-bottom: 24px;
   font-size: 20px;
@@ -499,9 +536,14 @@ body {
     width: 576px;
   }
 }
+@media (max-width: 600px) {
+  .customerForm {
+    width: 100%;
+  }
+}
 @media (max-width: 375px) {
   .customerForm {
-    max-width: 348px;
+    width: 100%;
   }
 }
 .customerForm input {
@@ -519,9 +561,14 @@ body {
     width: 576px;
   }
 }
+@media (max-width: 600px) {
+  .customerForm input {
+    width: 100%;
+  }
+}
 @media (max-width: 375px) {
   .customerForm input {
-    width: 348px;
+    width: 100%;
   }
 }
 .customerForm p {
@@ -547,7 +594,7 @@ body {
 }
 @media (max-width: 375px) {
   .customerForm button {
-    max-width: 348px;
+    width: 100%;
     padding: 16px;
   }
 }
@@ -580,12 +627,15 @@ body {
 
 textarea {
   margin-bottom: 16px;
-  padding-left: 12px;
-  padding-top: 6px;
+}
+@media (max-width: 600px) {
+  textarea {
+    width: 100%;
+  }
 }
 @media (max-width: 375px) {
   textarea {
-    max-width: 348px;
+    width: 100%;
   }
 }
 
@@ -615,6 +665,13 @@ textarea {
     flex-direction: row;
   }
 }
+@media (max-width: 600px) {
+  .header .container {
+    padding: 0;
+    flex-direction: column;
+    align-items: start;
+  }
+}
 @media (max-width: 375px) {
   .header .container {
     padding: 0;
@@ -634,6 +691,24 @@ textarea {
 }
 .nav ul li a {
   color: #ffffff;
+}
+@media (max-width: 600px) {
+  .nav {
+    padding: 0;
+    width: 100%;
+  }
+  .nav ul {
+    flex-wrap: wrap;
+  }
+  .nav ul li {
+    border: 1px solid #ffffff;
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 @media (max-width: 375px) {
   .nav {
@@ -668,6 +743,12 @@ textarea {
   padding-top: 48px;
   padding-bottom: 32px;
 }
+@media (max-width: 375px) {
+  .footer {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+}
 @media (max-width: 768px) {
   .footer .container {
     max-width: 696px;
@@ -675,7 +756,7 @@ textarea {
 }
 @media (max-width: 375px) {
   .footer .container {
-    max-width: 347px;
+    max-width: 348px;
   }
 }
 .footer a {
@@ -683,6 +764,11 @@ textarea {
 }
 .footer .top {
   margin-bottom: 24px;
+}
+@media (max-width: 600px) {
+  .footer .top {
+    display: none;
+  }
 }
 @media (max-width: 375px) {
   .footer .top {
@@ -731,6 +817,11 @@ textarea {
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .mid {
+    display: none;
+  }
+}
 @media (max-width: 375px) {
   .mid {
     display: none;
@@ -770,6 +861,26 @@ textarea {
 
 .rwdFooter {
   display: none;
+}
+@media (max-width: 600px) {
+  .rwdFooter {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    border-bottom: 1px solid #ffffff;
+    max-width: 348px;
+  }
+  .rwdFooter ul li {
+    align-items: center;
+  }
+  .rwdFooter ul li img {
+    width: 24px;
+    margin-left: 8px;
+  }
+  .rwdFooter ul li p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 @media (max-width: 375px) {
   .rwdFooter {
@@ -816,20 +927,20 @@ textarea {
     width: 100%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .bottom {
     flex-direction: column;
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
-
-.PT80 {
-  padding-top: 80px;
-}
-
-.PB80 {
-  padding-bottom: 80px;
+@media (max-width: 375px) {
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .DF {

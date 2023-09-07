@@ -10,6 +10,12 @@
   }
 }
 
+@mixin padToMobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
 @mixin h2 {
   font-size: 48px;
   line-height: 72px;
