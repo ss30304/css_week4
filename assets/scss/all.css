@@ -1095,4 +1095,10 @@ body {
 }
 .productCards ul li {
   width: calc((100% - 72px) / 4);
+}
+.productCards ul li img {
+  margin-bottom: 0;
+}
+.productCards ul li .productName {
+  justify-content: space-between;
 }/*# sourceMappingURL=all.css.map */

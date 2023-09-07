@@ -64,6 +64,12 @@ body {
     justify-content: space-between;
     li {
       width: calc((100% - 72px) / 4);
+      img {
+        margin-bottom: 0;
+      }
+      .productName {
+        justify-content: space-between;
+      }
     }
   }
 }
