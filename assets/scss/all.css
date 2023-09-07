@@ -1103,4 +1103,8 @@ body {
   justify-content: space-between;
   font-weight: 500;
   color: #aa0601;
+}
+.productCards ul li .mod {
+  font-weight: normal;
+  color: #000000;
 }/*# sourceMappingURL=all.css.map */
