@@ -1,5 +1,6 @@
 @import "../layout/mixin";
 .footer {
+  @include padding;
   @include padToMobile {
     padding-top: 0px;
     padding-bottom: 0;

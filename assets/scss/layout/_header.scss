@@ -2,7 +2,9 @@
 .header {
   background-color: #aa0601;
   .container {
-    padding: auto 16.25%;
+    @include padding;
+    padding-top: 0;
+    padding-bottom: 0;
     @include pad {
       max-width: 696px;
       flex-direction: row;
@@ -71,6 +73,9 @@
 
 .logo img {
   width: 80px;
+  @include padToMobile {
+    padding: 12px;
+  }
   @include mobile {
     padding: 16px;
   }
