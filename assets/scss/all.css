@@ -1123,6 +1123,29 @@ body {
   border-radius: 4px;
 }
 
+.pages {
+  margin-bottom: 80px;
+}
+.pages ul {
+  align-items: center;
+}
 .pages ul li {
   border-left: 1px solid #555555;
+  border-top: 1px solid #555555;
+  border-bottom: 1px solid #555555;
+  padding: 11px 12px;
+  font-size: 19px;
+  line-height: 29px;
+}
+.pages ul li a {
+  color: #555555;
+}
+.pages ul li:nth-child(7) {
+  border-right: 1px solid #555555;
+}
+.pages ul li:hover {
+  background-color: #000000;
+}
+.pages ul li:hover a {
+  color: #ffffff;
 }/*# sourceMappingURL=all.css.map */

@@ -95,9 +95,32 @@ body {
 }
 
 .pages {
+  margin-bottom: 80px;
+  .container {
+    width: calc(100%-624px);
+    margin: 0 auto;
+  }
   ul {
+    width: 372px;
     li {
       border-left: 1px solid #555555;
+      border-top: 1px solid #555555;
+      border-bottom: 1px solid #555555;
+      padding: 11px 12px;
+      font-size: 19px;
+      line-height: 29px;
+      a {
+        color: #555555;
+      }
+    }
+    li:nth-child(7) {
+      border-right: 1px solid #555555;
+    }
+    li:hover {
+      background-color: #000000;
+      a {
+        color: #ffffff;
+      }
     }
   }
 }
