@@ -1086,4 +1086,13 @@ body {
   font-size: 32px;
   line-height: 48px;
   text-align: center;
+  margin-bottom: 32px;
+}
+
+.productCards ul {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productCards ul li {
+  width: calc((100% - 72px) / 4);
 }/*# sourceMappingURL=all.css.map */
