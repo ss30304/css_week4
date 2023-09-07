@@ -14,6 +14,9 @@ body {
     padding-right: 12px;
     ul {
       justify-content: space-around;
+      li {
+        @include fontH3;
+      }
     }
   }
 }
