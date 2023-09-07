@@ -183,6 +183,7 @@ body {
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
     background-size: cover;
     padding: 144px 14px;
+    height: 396px;
   }
 }
 
@@ -229,6 +230,11 @@ body {
   font-weight: bold;
   margin-bottom: 24px;
 }
+@media (max-width: 768px) {
+  .intro ul {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 375px) {
   .intro {
     padding: 40px 14px;
@@ -246,6 +252,11 @@ body {
 }
 .cards li {
   width: calc((100% - 72px) / 4);
+}
+@media (max-width: 768px) {
+  .cards li {
+    width: calc((100% - 24px) / 2);
+  }
 }
 .cards span {
   width: 100px;
@@ -297,6 +308,14 @@ body {
   width: 100%;
   margin-bottom: 8px;
 }
+@media (max-width: 768px) {
+  .productCards ul {
+    flex-direction: column;
+  }
+  .productCards li {
+    width: 336px;
+  }
+}
 @media (max-width: 375px) {
   .productCards ul {
     flex-direction: column;
@@ -338,6 +357,14 @@ body {
   font-style: italic;
   font-weight: 900;
 }
+@media (max-width: 768px) {
+  .crossoverCards ul {
+    flex-direction: column;
+  }
+  .crossoverCards ul li {
+    margin-bottom: 24px;
+  }
+}
 @media (max-width: 375px) {
   .crossoverCards ul {
     flex-direction: column;
@@ -369,6 +396,11 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .fbCards ul {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 375px) {
   .fbCards ul {
     flex-direction: column;
@@ -377,10 +409,21 @@ body {
 .fbCards li {
   width: calc((100% - 72px) / 4);
 }
+@media (max-width: 768px) {
+  .fbCards li {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 24px;
+  }
+}
 @media (max-width: 375px) {
   .fbCards li {
     width: calc(100% - 28px);
     margin-bottom: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .fbCards li:nth-child(1) .customer p:nth-child(2) {
+    margin-bottom: 96px;
   }
 }
 .fbCards img {
@@ -410,6 +453,9 @@ body {
 
 .contact {
   background: #fbf2f2;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: bold;
 }
 .contact h2 {
   font-size: 48px;
@@ -418,17 +464,6 @@ body {
   color: #650300;
   margin-bottom: 48px;
 }
-.contact p {
-  margin-bottom: 24px;
-  font-size: 20px;
-  line-height: 30px;
-}
-@media (max-width: 375px) {
-  .contact p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
 @media (max-width: 375px) {
   .contact {
     padding: 40px 14px;
@@ -436,15 +471,32 @@ body {
 }
 
 .form {
-  max-width: 636px;
+  width: 636px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .form {
+    width: 576px;
+  }
 }
 .form p {
   margin-bottom: 24px;
   font-size: 20px;
   line-height: 30px;
+  font-weight: normal;
+}
+@media (max-width: 768px) {
+  .form p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
+@media (max-width: 768px) {
+  .customerForm {
+    width: 576px;
+  }
+}
 @media (max-width: 375px) {
   .customerForm {
     max-width: 348px;
@@ -452,7 +504,7 @@ body {
 }
 .customerForm input {
   /*為什麼寬度不能設100%*/
-  max-width: 636px;
+  width: 636px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 12px;
@@ -460,9 +512,14 @@ body {
   margin-bottom: 16px;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .customerForm input {
+    width: 576px;
+  }
+}
 @media (max-width: 375px) {
   .customerForm input {
-    max-width: 348px;
+    width: 348px;
   }
 }
 .customerForm p {
@@ -480,6 +537,11 @@ body {
   line-height: 24px;
   padding: 16px 176px;
   border: 0;
+}
+@media (max-width: 768px) {
+  .customerForm button {
+    padding: 16px 136px;
+  }
 }
 @media (max-width: 375px) {
   .customerForm button {
