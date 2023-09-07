@@ -38,8 +38,21 @@ body {
 }
 
 .productPhoto {
+  margin-bottom: 80px;
   img {
-    display: block;
     width: 50%;
+  }
+}
+
+.productSeries {
+  h2 {
+    font-size: 42px;
+    line-height: 63px;
+    text-align: center;
+    font-weight: 500;
+  }
+  h3 {
+    @include fontH3;
+    text-align: center;
   }
 }

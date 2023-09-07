@@ -1069,7 +1069,21 @@ body {
   border-right: 1px solid #dcdcdc;
 }
 
+.productPhoto {
+  margin-bottom: 80px;
+}
 .productPhoto img {
-  display: block;
   width: 50%;
+}
+
+.productSeries h2 {
+  font-size: 42px;
+  line-height: 63px;
+  text-align: center;
+  font-weight: 500;
+}
+.productSeries h3 {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
 }/*# sourceMappingURL=all.css.map */
