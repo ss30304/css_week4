@@ -1,126 +1,126 @@
 @import "../layout/mixin";
 body {
-  font-family: "Noto Sans TC", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
 }
 
 @mixin fontH3 {
-  font-size: 32px;
-  line-height: 48px;
+    font-size: 32px;
+    line-height: 48px;
 }
 
 .productPage {
-  padding-left: 12px;
-  padding-right: 12px;
-  ul {
-    justify-content: space-between;
-    width: 1296px;
     padding-left: 12px;
     padding-right: 12px;
-    li {
-      width: calc(100% / 3);
-      border-left: 1px solid #dcdcdc;
-      @include fontH3;
-      font-weight: 500;
-      padding-top: 24px;
-      padding-bottom: 24px;
-      text-align: center;
-      a {
-        color: #000000;
-      }
+    ul {
+        justify-content: space-between;
+        width: 1296px;
+        padding-left: 12px;
+        padding-right: 12px;
+        li {
+            width: calc(100% / 3);
+            border-left: 1px solid #dcdcdc;
+            @include fontH3;
+            font-weight: 500;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            text-align: center;
+            a {
+                color: #000000;
+            }
+        }
+        li:hover {
+            border-bottom: 8px solid #aa0601;
+        }
+        li:nth-child(3) {
+            border-right: 1px solid #dcdcdc;
+        }
     }
-    li:hover {
-      border-bottom: 8px solid #aa0601;
-    }
-    li:nth-child(3) {
-      border-right: 1px solid #dcdcdc;
-    }
-  }
 }
 
 .productPhoto {
-  margin-bottom: 80px;
-  img {
-    width: 50%;
-  }
+    margin-bottom: 80px;
+    img {
+        width: 50%;
+    }
 }
 
 .productSeries {
-  h2 {
-    font-size: 42px;
-    line-height: 63px;
-    text-align: center;
-    font-weight: 500;
-  }
-  h3 {
-    @include fontH3;
-    text-align: center;
-    margin-bottom: 32px;
-  }
+    h2 {
+        font-size: 42px;
+        line-height: 63px;
+        text-align: center;
+        font-weight: 500;
+    }
+    h3 {
+        @include fontH3;
+        text-align: center;
+        margin-bottom: 32px;
+    }
 }
 
 .productCards {
-  ul {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    li {
-      width: calc((100% - 72px) / 4);
-      margin-bottom: 80px;
-      img {
-        margin-bottom: 0;
-      }
-      .productName {
+    ul {
+        flex-wrap: wrap;
         justify-content: space-between;
-        font-weight: 500;
-        color: #aa0601;
-      }
-      .mod {
-        font-weight: normal;
-        color: #000000;
-      }
-      .color1 {
-        width: 24px;
-        height: 24px;
-        background-color: #5f3e2d;
-        border-radius: 4px;
-        margin-right: 8px;
-      }
-      .color2 {
-        width: 24px;
-        height: 24px;
-        background-color: #b75929;
-        border-radius: 4px;
-      }
+        li {
+            width: calc((100% - 72px) / 4);
+            margin-bottom: 80px;
+            img {
+                margin-bottom: 0;
+            }
+            .productName {
+                justify-content: space-between;
+                font-weight: 500;
+                color: #aa0601;
+            }
+            .mod {
+                font-weight: normal;
+                color: #000000;
+            }
+            .color1 {
+                width: 24px;
+                height: 24px;
+                background-color: #5f3e2d;
+                border-radius: 4px;
+                margin-right: 8px;
+            }
+            .color2 {
+                width: 24px;
+                height: 24px;
+                background-color: #b75929;
+                border-radius: 4px;
+            }
+        }
     }
-  }
 }
 
 .pages {
-  margin-bottom: 80px;
-  .container {
-    width: calc(100%-624px);
-    margin: 0 auto;
-  }
-  ul {
+    margin-bottom: 80px;
+}
+
+ul {
     width: 372px;
     li {
-      border-left: 1px solid #555555;
-      border-top: 1px solid #555555;
-      border-bottom: 1px solid #555555;
-      padding: 11px 12px;
-      font-size: 19px;
-      line-height: 29px;
-      a {
-        color: #555555;
-      }
+        border-left: 1px solid #555555;
+        border-top: 1px solid #555555;
+        border-bottom: 1px solid #555555;
+        padding: 11px 12px;
+        font-size: 19px;
+        line-height: 29px;
+        a {
+            color: #555555;
+        }
     }
     li:nth-child(7) {
-      border-right: 1px solid #555555;
+        border-right: 1px solid #555555;
     }
     li:hover {
-      background-color: #000000;
-      a {
-        color: #ffffff;
-      }
+        background-color: #000000;
+        a {
+            color: #ffffff;
+        }
     }
-  }
+}
+
+
 }
