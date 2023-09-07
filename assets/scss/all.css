@@ -1047,7 +1047,7 @@ body {
   justify-content: space-around;
 }
 .productPage ul li {
-  width: 432px;
+  width: 33.3333333333%;
   padding: 24px 150px;
   border-left: 1px solid #dcdcdc;
   font-size: 32px;
