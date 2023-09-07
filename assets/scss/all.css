@@ -1107,4 +1107,16 @@ body {
 .productCards ul li .mod {
   font-weight: normal;
   color: #000000;
+}
+.productCards ul li .color1 {
+  width: 24px;
+  height: 24px;
+  background-color: #5f3e2d;
+  border-radius: 4px;
+}
+.productCards ul li .color2 {
+  width: 24px;
+  height: 24px;
+  background-color: #b75929;
+  border-radius: 4px;
 }/*# sourceMappingURL=all.css.map */
