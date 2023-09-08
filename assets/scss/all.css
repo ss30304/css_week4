@@ -1089,34 +1089,39 @@ body {
   margin-bottom: 32px;
 }
 
-.productCards ul {
+.pdCards ul {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.productCards ul li {
+.pdCards ul li {
   width: calc((100% - 72px) / 4);
   margin-bottom: 80px;
 }
-.productCards ul li img {
+@media (max-width: 768px) {
+  .pdCards ul li {
+    width: calc((100% - 24px) / 2);
+  }
+}
+.pdCards ul li img {
   margin-bottom: 0;
 }
-.productCards ul li .productName {
+.pdCards ul li .productName {
   justify-content: space-between;
   font-weight: 500;
   color: #aa0601;
 }
-.productCards ul li .mod {
+.pdCards ul li .mod {
   font-weight: normal;
   color: #000000;
 }
-.productCards ul li .color1 {
+.pdCards ul li .color1 {
   width: 24px;
   height: 24px;
   background-color: #5f3e2d;
   border-radius: 4px;
   margin-right: 8px;
 }
-.productCards ul li .color2 {
+.pdCards ul li .color2 {
   width: 24px;
   height: 24px;
   background-color: #b75929;
