@@ -1075,8 +1075,18 @@ body {
 .productPhoto img {
   width: 50%;
 }
+@media (max-width: 768px) {
+  .productPhoto .pcPdHeader {
+    display: none;
+  }
+}
 .productPhoto .rwdPdHeaderImg {
   display: none;
+}
+@media (max-width: 768px) {
+  .productPhoto .rwdPdHeaderImg {
+    display: block;
+  }
 }
 
 .productSeries h2 {

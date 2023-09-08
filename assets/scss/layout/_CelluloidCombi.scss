@@ -42,8 +42,16 @@ body {
   img {
     width: 50%;
   }
+  .pcPdHeader {
+    @include pad {
+      display: none;
+    }
+  }
   .rwdPdHeaderImg {
     display: none;
+    @include pad {
+      display: block;
+    }
   }
 }
 
