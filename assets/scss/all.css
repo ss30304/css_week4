@@ -515,7 +515,7 @@ body {
 }
 
 .form {
-  width: 100%;
+  max-width: 636px;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -546,9 +546,12 @@ body {
   }
 }
 
+.customerForm {
+  max-width: 636px;
+}
 @media (max-width: 768px) {
   .customerForm {
-    width: 576px;
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -563,7 +566,7 @@ body {
 }
 .customerForm input {
   /*為什麼寬度不能設100%*/
-  width: 636px;
+  max-width: 636px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 12px;
@@ -573,7 +576,7 @@ body {
 }
 @media (max-width: 768px) {
   .customerForm input {
-    width: 576px;
+    width: 100%;
   }
 }
 @media (max-width: 600px) {

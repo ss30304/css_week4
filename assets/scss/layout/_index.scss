@@ -326,7 +326,7 @@ body {
 }
 
 .form {
-  width: 100%;
+  max-width: 636px;
   margin: 0 auto;
   @include pad {
     width: 100%;
@@ -350,8 +350,9 @@ body {
 }
 
 .customerForm {
+  max-width: 636px;
   @include pad {
-    width: 576px;
+    width: 100%;
   }
   @include padToMobile {
     width: 100%;
@@ -361,7 +362,7 @@ body {
   }
   input {
     /*為什麼寬度不能設100%*/
-    width: 636px;
+    max-width: 636px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 12px;
@@ -369,7 +370,7 @@ body {
     margin-bottom: 16px;
     box-sizing: border-box;
     @include pad {
-      width: 576px;
+      width: 100%;
     }
     @include padToMobile {
       width: 100%;
