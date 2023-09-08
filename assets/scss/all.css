@@ -1214,6 +1214,7 @@ body {
   padding-right: 12px;
 }
 .pages ul {
+  justify-content: center;
   max-width: 372px;
   margin: 0 auto;
 }
