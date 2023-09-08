@@ -42,6 +42,9 @@ body {
   img {
     width: 50%;
   }
+  .rwdPdHeaderImg {
+    display: none;
+  }
 }
 
 .productSeries {
@@ -59,13 +62,21 @@ body {
 }
 
 .pdCards {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   ul {
     flex-wrap: wrap;
     justify-content: space-between;
     li {
       width: calc((100% - 72px) / 4);
       margin-bottom: 80px;
+      @include pad {
+        width: calc((100% - 24px) / 2);
+      }
       img {
+        width: 100%;
         margin-bottom: 0;
       }
       .productName {

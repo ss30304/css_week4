@@ -1075,6 +1075,9 @@ body {
 .productPhoto img {
   width: 50%;
 }
+.productPhoto .rwdPdHeaderImg {
+  display: none;
+}
 
 .productSeries h2 {
   font-size: 42px;
@@ -1089,6 +1092,10 @@ body {
   margin-bottom: 32px;
 }
 
+.pdCards .container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
 .pdCards ul {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1097,7 +1104,13 @@ body {
   width: calc((100% - 72px) / 4);
   margin-bottom: 80px;
 }
+@media (max-width: 768px) {
+  .pdCards ul li {
+    width: calc((100% - 24px) / 2);
+  }
+}
 .pdCards ul li img {
+  width: 100%;
   margin-bottom: 0;
 }
 .pdCards ul li .productName {
