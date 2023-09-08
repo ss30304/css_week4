@@ -515,12 +515,12 @@ body {
 }
 
 .form {
-  width: 636px;
+  width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
   .form {
-    width: 576px;
+    width: 100%;
   }
 }
 @media (max-width: 600px) {

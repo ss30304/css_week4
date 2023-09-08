@@ -326,10 +326,10 @@ body {
 }
 
 .form {
-  width: 636px;
+  width: 100%;
   margin: 0 auto;
   @include pad {
-    width: 576px;
+    width: 100%;
   }
   @include padToMobile {
     width: 100%;
