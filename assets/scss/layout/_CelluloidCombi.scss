@@ -58,16 +58,13 @@ body {
   }
 }
 
-.pdCards {
+.productCards {
   ul {
     flex-wrap: wrap;
     justify-content: space-between;
     li {
       width: calc((100% - 72px) / 4);
       margin-bottom: 80px;
-      @include pad {
-        width: calc((100% - 24px) / 2);
-      }
       img {
         margin-bottom: 0;
       }
